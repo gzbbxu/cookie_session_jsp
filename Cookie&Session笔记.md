@@ -205,6 +205,7 @@
 				* response.getWriter()和out.write()的区别：
 					* 在tomcat服务器真正给客户端做出响应之前，会先找response缓冲区数据，再找out缓冲区数据。
 					* response.getWriter()数据输出永远在out.write()之前
+					*  建议统一使用jsp 转换的servlet 都是使用额out输出，使用resposne可能打乱布局，建议使用out
 				
 	5. 案例:改造Cookie案例
 
